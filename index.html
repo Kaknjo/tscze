@@ -1,0 +1,152 @@
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/r-2.2.2/datatables.min.css"/>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/r-2.2.2/datatables.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  
+	<title></title>
+</head>
+<body>
+  <!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+   <div class="container">
+            <a class="navbar-brand"  href="#">TSCZE</a>
+        
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+  
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+           <div class="collapse navbar-collapse" id=navbar>
+                <ul class="navbar-nav">
+
+                    <li class="navbar-item ml-auto">
+                        <a class="nav-link" href="#">Registracija</a>
+                    </li>
+                    <li class="navbar-item ml-auto">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="navbar-item ml-auto">
+                        <a  class="nav-link" href="#">Svi ucenici</a>
+                    </li>
+                    <li class="navbar-item ml-auto">
+                        <a class="nav-link" href="#">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <!-- Tabela -->
+	<div class="container">
+	<table id="example" class="display" style="width:100%">
+  <thead>
+    <tr>
+      <th class="th-sm">Ime
+      </th>
+      <th class="th-sm">Prezime
+      </th>
+      <th class="th-sm">Smjer
+      </th>
+      <th class="th-sm">Bodovi
+      </th>
+      <th class="th-sm">Diploma
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Irfan</td>
+      <td>Abadžić</td>
+      <td>Mašinstvo</td>
+      <td>40</td>
+      <td>link</td>
+    </tr>
+    <tr>
+      <td>Čerim</td>
+      <td>Kadric</td>
+      <td>Arhitektura</td>
+      <td>63</td>
+      <td>link</td>
+    </tr>
+    <tr>
+      <td>Džanan</td>
+      <td>Nikolić</td>
+      <td>Elektronika</td>
+      <td>66</td>
+      <td>link</td>
+    </tr>
+    <tr>
+      <td>Hasan</td>
+      <td>Omerlagić</td>
+      <td>Mašinstvo</td>
+      <td>22</td>
+      <td>link</td>
+    </tr>
+    <tr>
+      <td>Ismet</td>
+      <td>Stanić</td>
+      <td>Računarstvo</td>
+      <td>33</td>
+      <td>link</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Ime
+      </th>
+      <th>Prezime
+      </th>
+      <th>Smjer
+      </th>
+      <th>Bodovi
+      </th>
+      <th>Diploma
+    </tr>
+  </tfoot>
+</table>
+</div>
+<!----------- Footer ------------>
+<footer id="myFooter">
+		<div class="container">
+				<div class="row">
+					
+						<div class="col-md text-center">
+								<h6>O nama: </h6>
+								<ul> 
+										<li><i class="fas fa-home mr-3"></i><a href="#">Adresa: </a></li>
+										<li><i class="fa fa-phone mr-3" ></i><a href="#">Telefon</a></li>
+										<li><i class="fas fa-envelope "></i><a class ="mr-3" href="#"> tscze@bih.net.ba</a></li>
+								</ul>
+						</div>
+              <div class="col-md  text-center">
+                <h2 class="logo ml-4"><a href="#"><img src="logo.png"></a></h2>
+            </div>
+						<div class="col-md  text-center">
+								<h6>Dodatne informacije</h6>
+								<ul>
+										<li><a href="#">Facebook stranica</a></li>
+										<li><a href="www.tscze.com">Tehnicka skola Zenica</a></li>
+										
+								</ul>
+						</div>
+						  
+						
+				</div>
+      
+		</div>
+		<div class="footer-copyright">
+				<p>© 2019 TSZE </p>
+		</div>
+</footer>
+<script>
+	$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
+</body>
+</html>
