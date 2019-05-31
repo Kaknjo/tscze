@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container">
+	<div class="float-left">
+	<input  type="checkbox" id="check" onclick="fill()" name="check"><input id="unos" type="text" name="unos">
+	</div>
+	<br>
+	<span id="greska" class="text-daner">	</span>
+	<br><br>
+	<span id="jmbg1" class="text-danger"></span>
+	<span id="jmbg2" class="text-danger"></span>
+	<span id="ime1" class="text-danger"></span>
+	<span class="text-danger" id="prezime1">	</span>
+	
+	
+<form action="nova.html" onsubmit="return  provjera()">
+	<table class="table table-hover table-dark table-sm mb-1 mt-5">
+		<thead>
+			<tr class="text-center"> 
+				<th scope="col">Ime</th>
+				<th scope="col">Prezime</th>
+				<th scope="col">JMBG</th>
+				<th scope="col">Smjer</th>
+
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<div class="col-xs-2">
+					 <div class="input-group">
+                        
+                        <input id="ime" type="text" class="form-control" name="name"  placeholder="Enter your Name" >
+                      
+                    
+                    </div>
+                </div>
+				</td>
+				<td>
+					<div class="col-xs-2">
+					 <div class="input-group">
+                        
+                        <input type="text" id="prezime" class="form-control " placeholder="Unesite prezime" >
+                        
+                        
+                    </div>
+                </div>
+				</td>
+				<td>
+					<div class="col-xs-2">
+					 <div class="input-group">
+                        
+                        <input type="text"  id="jmbg" class="form-control "   placeholder="Unesite JMBG" >
+                       
+                    </div>
+                </div>
+				</td>
+				<td>
+					<select class="form-control">
+      					<option>Racunarska tehnika i automatika</option>
+      					<option>Masinski tehnicar</option>
+      					<option>Elektrotehnicar elektronike</option>
+      					<option>Arhitektonski tehnicar</option>
+      					<option>Tehnicar drumskog saobracaja</option>
+      				</select>
+      			</td>
+				</tr>
+			</tr>
+		</tbody>
+	</table>
+	<table class="table table-hover table-dark table-sm">
+  <thead>
+    <tr class="text-center">
+      <th scope="col">Predmeti</th>
+      <th scope="col">Razred 6</th>
+      <th scope="col">Razred 7</th>
+      <th scope="col">Razred 8</th>
+       <th scope="col">Razred 9</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Matematika</th>
+      <td>
+      	<input type="number" min="2" max="5" value="5" id="jedan1">
+  	</td>
+  	<td>
+      	<input type="number" min="2" max="5" value="5" id="jedan2">
+  	</td>
+  	<td>
+      	<input type="number" min="2" max="5" value="5" id="jedan3">
+  	</td>
+  	<td>
+      	<input type="number" min="2" max="5" value="5" id="jedan4">
+    </td>
+      
+    </tr>
+    <tr>
+      <th scope="row">Fizika</th>
+      <td>
+      	<input type="number" min="2" max="5" value="5" id="jedan5">
+      </td>
+      <td>
+      	<input type="number" min="2" max="5" value="5" id="jedan6">
+      </td>
+      <td>
+      	<input type="number" min="2" max="5" value="5" id="jedan7">
+      </td>
+      <td>
+      	<input type="number" min="2" max="5" value="5" id="jedan8">
+      </td>
+
+
+  
+    </tr>
+    <tr>
+      <th scope="row">Hemija</th>
+      <td>
+      	<input type="number" min="2" max="5" value="5" id="jedan9">
+      </td>
+       <td>
+      	<input type="number" min="2" max="5" value="5" id="jedan10">
+      </td>
+       <td>
+      	<input type="number" min="2" max="5" value="5" id="jedan11">
+      </td>
+       <td>
+      	<input type="number" min="2" max="5" value="5" id="jedan12">
+      </td>
+
+
+
+
+      
+    </tr>
+  </tbody>
+</table>
+<button class="btn btn-outline-dark btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit"><span class="input-group-addon mr-2"><i class="fa fa-user fa" aria-hidden="true"></i></span>  Dodaj ucenika</button>
+</form>
+</div>
+
+
+<script type="text/javascript">
+	function provjera(){
+		var ime_=	document.getElementById("ime").value;
+		var prezime=	document.getElementById("prezime").value;
+		var jmbg=	document.getElementById("jmbg").value;
+		if(ime==""){
+			document.getElementById("ime1").innerHTML="Molimo unesite vase ime";
+			return false;
+
+		}if(prezime==""){
+				document.getElementById("prezime1").innerHTML="Molimo unesite vase ime";;
+			return false;
+
+		}if(jmbg=="" || jmbg.length!=13){
+			document.getElementById("jmbg1").innerHTML=" Molimo unesite ispravan maticni broj ";
+			return false;
+		}
+		if(isNaN(jmbg)){
+			document.getElementById("jmbg2").innerHTML=" Maticni broj sadrzi samo brojeve ";
+			return false;
+
+		}
+		return true;
+	}
+	
+	function fill(){
+		var unos=document.getElementById("unos").value;
+		if(unos<2 || unos>5){
+			document.getElementById("greska").innerHTML=" Ocjene moraju biti od 2 do 5 ";
+
+		}else{
+			var checkbox=document.getElementById("check");
+			for(var i=1;i<13;i++){
+				document.getElementById("jedan"+i).value=unos;
+		}
+
+		}
+		
+	}
+
+	
+
+
+
+
+</script>
+</body>
+</html>
